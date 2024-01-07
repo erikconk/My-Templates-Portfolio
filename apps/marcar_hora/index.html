@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Hora</title>
+
+    <!--<link rel="stylesheet" href="/bootstrap-5.3.2-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="/css/core/global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: rgb(45, 45, 67);">
+    <div style="border: 1px solid white; color: white; width: fit-content; padding: 1rem; border-radius: 5px; margin: auto;">
+        <input id="theme-default" type="radio" name="theme" value="" onclick="changeTheme(this.value)" checked>
+        <label for="theme-default">Default</label>
+        <br>
+        <input id="theme-ligth" type="radio" name="theme" value="ligth" onclick="changeTheme(this.value)">
+        <label for="theme-ligth">Ligth</label>
+        <br>
+        <input id="theme-dark" type="radio" name="theme" value="dark" onclick="changeTheme(this.value)">
+        <label for="theme-dark">Dark</label>
+    </div>
+    <br>
+    <br>
+
+
+    <main id="Calendar"></main>
+
+    <!--<script src="/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>-->
+    <script src="calendar.js"></script>
+    <script>
+        
+        function changeTheme(theme){
+            let calendar = document.getElementById('Calendar');
+            calendar.classList = [];
+            calendar.classList.add(theme)
+        }
+    </script>
+</body>
+
+</html>

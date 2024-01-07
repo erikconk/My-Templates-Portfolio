@@ -1,0 +1,12 @@
+@import url(reset.css);
+@import url(theme.css);
+@import url(navbar.css);
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(/fonts/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+*{
+    font-family: Ubuntu;;
+}

@@ -1,0 +1,121 @@
+#Calendar{
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    max-width: 400px;
+    cursor: default;
+    overflow: hidden;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+#Calendar > div{
+    text-align: center;
+}
+#Calendar > #year, #Calendar > #month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+#Calendar > #year > *, #Calendar > #month > *{
+    width: 100%;
+}
+
+#Calendar > #week-days{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#Calendar > #week-days > *{
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+#Calendar > .row-week{
+    display: flex;
+    flex-wrap: nowrap;
+}
+#Calendar > .row-week > *{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+#Calendar .enable-day:hover {
+    border-radius: 5px;
+}
+.click{
+    cursor: pointer;
+}
+.selected{
+    background-color: #ffffff46;
+    border-radius: 5px;
+}
+.enable-day{
+    cursor: pointer;
+}
+
+.disabled-day{
+    cursor: default;
+    color: gray;
+}
+
+
+/* Styles */
+.dark > #year, .dark > #month {
+    background-color: rgb(43, 43, 43);
+    color: rgb(235, 235, 235);
+}
+.dark > #week-days{
+    background-color: rgb(76, 76, 76);
+    color: white;
+}
+.dark > .row-week {
+    background-color: rgb(56, 56, 56);
+    color: white;
+    transition: background-color 0.5s;
+}
+.dark .enable-day:hover{
+    border-radius: 5px;
+    background-color: grey;
+    transition: background-color 0.5s;
+}
+.dark .disabled-day{
+    color: grey;
+}
+.dark .selected {
+    background-color: grey;
+}
+
+
+.ligth > #year,
+.ligth > #month {
+    background-color: rgb(0, 157, 255);
+    color: white;
+}
+
+.ligth>#week-days {
+    background-color: rgb(222, 222, 222);
+    color: rgb(64, 72, 87);
+}
+
+.ligth >.row-week {
+    background-color: rgb(254, 254, 254);
+    color: rgb(64, 72, 87); 
+}
+
+.ligth .enable-day:hover {
+    border-radius: 5px;
+    background-color: rgb(196, 232, 255);
+    transition: background-color 0.5s;
+}
+.ligth .disabled-day{
+    color: rgb(181, 202, 215);
+}
+.ligth .selected{
+    background-color: rgb(196, 232, 255);
+}
+
+.pink{}
+.blue{}
